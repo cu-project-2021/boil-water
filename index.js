@@ -1,2 +1,6 @@
 require('dotenv').config();
-require('./handler');
+const BOT = require('./src');
+
+let bot = new BOT();
+
+bot.init();
